@@ -1,0 +1,18 @@
+{
+  "name": "hybrid-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:benitocas88/hybrid-page.git",
+  "author": "Ebenezer Pool Castillo <beni522@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

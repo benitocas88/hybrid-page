@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  hybrid-app:
+    container_name: hybrid-page
+    build: .
+    ports:
+      - "3300:3000"
+    command: yarn run dev
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./src:/www/app/src
