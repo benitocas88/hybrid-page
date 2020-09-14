@@ -1,0 +1,40 @@
+{
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.13.1"
+    }
+  },
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb",
+    "prettier",
+    "airbnb/hooks",
+    "prettier/react",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "react-hooks"],
+  "parser": "babel-eslint",
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/display-name": "off",
+    "no-console": ["error", { "allow": ["info", "warn", "error"] }],
+    "quotes": ["error", "double"],
+    "camelcase": ["error", { "ignoreDestructuring": true, "properties": "never" }],
+    "react/jsx-props-no-spreading": "off"
+  }
+}
