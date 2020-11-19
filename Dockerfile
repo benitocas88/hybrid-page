@@ -1,7 +1,10 @@
-FROM node:12.18.3-slim
+FROM node:14.15.1-slim
 
-WORKDIR /www/app
-COPY package.json .
-RUN yarn install
-WORKDIR /www/app/src
-ADD ./src ./src
+WORKDIR /app
+COPY package*.json .
+RUN yarn add package.json --silent
+
+WORKDIR /app/src
+COPY ./src .
+
+CMD yarn run dev

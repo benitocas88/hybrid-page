@@ -6,8 +6,9 @@ services:
     build: .
     ports:
       - "3300:3000"
-    command: yarn run dev
+    volumes:
+      - ./src:/app/src:rw
     environment:
       - NODE_ENV=development
-    volumes:
-      - ./src:/www/app/src
+    env_file:
+      - .env.local
